@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bienvenue dans le programme de parrainage</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                font-family: "Segoe UI", sans-serif;
+            }
+
+            .conteneur-email {
+                max-width: 600px;
+                margin: 40px auto;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+            }
+
+            .entete {
+                background-color: #fdd835;
+                padding: 20px 30px;
+            }
+
+            .entete h1 {
+                color: #000000;
+                font-size: 26px;
+                margin: 0;
+            }
+
+            .corps {
+                padding: 30px;
+            }
+
+            .corps p {
+                font-size: 16px;
+                color: #333333;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .corps p.salutation {
+                font-size: 18px;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+
+            .corps p.signature {
+                font-weight: bold;
+                color: #000000;
+                margin-bottom: 0;
+            }
+
+            .footer {
+                background-color: #000000;
+                padding: 15px 30px;
+                text-align: center;
+                font-size: 14px;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="conteneur-email">
+            <div class="entete">
+                <h1>Bienvenue dans le programme de parrainage 🎉</h1>
+            </div>
+            <div class="corps">
+                <p class="salutation">Bonjour <strong>${prenoms}</strong>,</p>
+                <p>
+                    Nous avons bien reçu ta demande d'inscription pour le
+                    programme de parrainage. Toute l’équipe est ravie de
+                    t’accueillir dans cette belle aventure !
+                </p>
+                <p>
+                    Ton profil est actuellement en cours d’étude. Nous
+                    reviendrons vers toi très prochainement avec les prochaines
+                    étapes.
+                </p>
+                <p>
+                    En attendant, n’hésite pas à consulter notre espace dédié ou
+                    à nous contacter si tu as des questions.
+                </p>
+                <p class="signature">
+                    À très bientôt,<br />L'équipe d'organisation
+                </p>
+            </div>
+            <div class="footer">
+                © 2025 Programme de Parrainage MIAGE — Tous droits réservés
+            </div>
+        </div>
+    </body>
+</html>
