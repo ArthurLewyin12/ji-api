@@ -1,6 +1,7 @@
 import "dotenv/config";
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 import { prisma } from "./prisma.js";
 import { sendWelcomeEmail } from "./email.js";
 import { v2 as cloudinary } from "cloudinary";
@@ -12,6 +13,8 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 const app = new Hono();
+// Ajout du middleware CORS pour autoriser toutes les origines
+app.use("*", cors());
 // Fonction pour uploader un buffer vers Cloudinary
 const uploadToCloudinary = (buffer) => {
     return new Promise((resolve, reject) => {
